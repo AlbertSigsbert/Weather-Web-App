@@ -1,17 +1,22 @@
+.active{
+    transform: translateX(-5px);
+    /* opacity: 1; */
+}
 
-
-
-@media (min-width: 768px) { 
-   .weather-details{
+@media (min-width: 768px) {
+  .weather-details {
     background-color: #306287;
-   }
- }
+  }
+}
 
- @media (max-width: 768px) { 
-    .weather-details{
-        background: #d3d3d6;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to bottom,  #fff #c1f0ed, #ffffff,);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to bottom, #ffffff #c1f0ed, #e8eaee, ); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+  */
-    
-    }  
- }
+@media (max-width: 768px) {
+  .weather-details {
+    background: #d3d3d6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #fff #c1f0ed, #ffffff, );
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #ffffff #c1f0ed, #e8eaee, );
+    /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+  */
+
+  }
+}
