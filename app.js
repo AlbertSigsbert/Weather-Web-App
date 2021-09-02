@@ -5,7 +5,7 @@ const searchIcon = document.querySelector('.search-icon');
 const searchInputs = document.querySelectorAll('input');
 const searchSm = document.querySelector('#search-input-sm');
 const searchLg = document.querySelector('#search-input-lg');
-const searchIcons = document.querySelectorAll('.fa-search');
+const searchIcons = document.querySelectorAll('.search-icon');
 
 
 // let l = '';
@@ -25,11 +25,13 @@ searchIcons.forEach(icon => {
 
        if(searchLg.value !== '')
        {
-         console.log(searchLg.value); 
+         localStorage.setItem('locationName', searchLg.value);
+         clearValue(searchLg);
        }
         else if(searchSm.value !== '')
         {
-          console.log(searchSm.value); 
+          localStorage.setItem('locationName', searchSm.value);
+          clearValue(searchSm);
         }
       e.preventDefault();
     })
@@ -47,3 +49,7 @@ searchIcon.addEventListener('click' , () => {
     }
 })
 
+function  clearValue(input)
+{
+     input.value = ' ';
+}
