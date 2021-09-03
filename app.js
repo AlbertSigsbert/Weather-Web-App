@@ -26,11 +26,42 @@ searchIcons.forEach(icon => {
        if(searchLg.value !== '')
        {
          localStorage.setItem('locationName', searchLg.value);
+           
+         locationName = localStorage.getItem('locationName').toLowerCase();
+           
+         w.getWeatherDetails(locationName).then(data => {
+          if(data.message === 'city not found'){
+              console.log( "Please enter a valid city name");
+            }
+            else{
+              console.log(data);
+            }
+         }).catch(e => {
+           console.log(e);
+         });
+
+        
+
          clearValue(searchLg);
        }
         else if(searchSm.value !== '')
         {
           localStorage.setItem('locationName', searchSm.value);
+
+          locationName =  localStorage.getItem('locationName').toLowerCase();
+
+
+         w.getWeatherDetails(locationName).then(data => {
+            if(data.message === 'city not found'){
+              console.log( "Please enter a valid city name");
+              }
+              else{
+                console.log(data);
+            }
+         }).catch(e => {
+           console.log(e);
+         });
+
           clearValue(searchSm);
         }
       e.preventDefault();
