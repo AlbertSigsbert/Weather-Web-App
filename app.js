@@ -6,11 +6,60 @@ const searchInputs = document.querySelectorAll('input');
 const searchSm = document.querySelector('#search-input-sm');
 const searchLg = document.querySelector('#search-input-lg');
 const searchIcons = document.querySelectorAll('.search-icon');
+const cities = document.querySelectorAll('#city');
+
+document.addEventListener("DOMContentLoaded", function(event) {
+      if(localStorage.getItem('locationName') === null){
+        
+      }
+      else{
+
+        locationName = localStorage.getItem('locationName').toLowerCase();
+             
+        w.getWeatherDetails(locationName).then(data => {
+          if(data.message === 'city not found'){
+              console.log( "Please enter a valid city name");
+            }
+            else{
+              // console.log(data);
+              ui.setWeatherDetails(data);
+            }
+         }).catch(e => {
+           console.log(e);
+         });
+      }
+});
+
+cities.forEach(city =>{
+  city.addEventListener('click', (e) => {
+     
+      locationName = e.target.innerText;
+      localStorage.setItem('locationName', locationName);
+
+      
+        
+      locationName = localStorage.getItem('locationName').toLowerCase();
+        
+      w.getWeatherDetails(locationName).then(data => {
+       if(data.message === 'city not found'){
+           console.log( "Please enter a valid city name");
+         }
+         else{
+           // console.log(data);
+           ui.setWeatherDetails(data);
+         }
+      }).catch(e => {
+        console.log(e);
+      });
+
+     
+
+    e.preventDefault()
+  })
+})
 
 
 // let l = '';
-
-
 // searchInputs.forEach(input => {
 //   input.addEventListener('keyup', e => {
 
@@ -19,6 +68,30 @@ const searchIcons = document.querySelectorAll('.search-icon');
 //     e.preventDefault();
 //   })
 // })
+searchLg.addEventListener("keyup", e => {
+    
+    if (e.keyCode === 13) {
+      localStorage.setItem('locationName', searchLg.value);
+
+      locationName = localStorage.getItem('locationName').toLowerCase();
+             
+      w.getWeatherDetails(locationName).then(data => {
+        if(data.message === 'city not found'){
+            console.log( "Please enter a valid city name");
+          }
+          else{
+            // console.log(data);
+            ui.setWeatherDetails(data);
+          }
+       }).catch(e => {
+         console.log(e);
+       }); 
+
+       clearValue(searchLg);
+    }
+    e.preDefault();
+});
+
 
 searchIcons.forEach(icon => {
     icon.addEventListener('click', e => {
@@ -34,7 +107,8 @@ searchIcons.forEach(icon => {
               console.log( "Please enter a valid city name");
             }
             else{
-              console.log(data);
+              // console.log(data);
+              ui.setWeatherDetails(data);
             }
          }).catch(e => {
            console.log(e);
@@ -56,7 +130,8 @@ searchIcons.forEach(icon => {
               console.log( "Please enter a valid city name");
               }
               else{
-                console.log(data);
+                 // console.log(data);
+                  ui.setWeatherDetails(data);
             }
          }).catch(e => {
            console.log(e);

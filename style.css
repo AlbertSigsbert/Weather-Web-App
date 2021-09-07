@@ -1,6 +1,63 @@
 .active{
-    transform: translateX(-5px);
+    transform: translateX(0);
     /* opacity: 1; */
+}
+
+/* ----------- iPad Pro ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    #main-weather-details{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    #icon-description{
+      flex-direction: row;
+    }
+
+    #city{
+      padding: 20px 0;
+    }
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    html, body{
+      overflow-x: hidden !important;
+      
+    }
+
+    #main-weather-details{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    #icon-description{
+      flex-direction: row;
+    }
+
+    #city{
+      padding: 20px 0;
+    }
+    /* #search-input-sm:focus{
+          outline: none;
+    }
+    .weather-details {
+      background: #d3d3d6;
+    
+    
+      background: -webkit-linear-gradient(to bottom, rgb(56, 168, 219) #c1f0ed, #e8eaee  );
+      
+      background: linear-gradient(to bottom, rgb(56, 168, 219) #c1f0ed, #e8eaee );
+  } */
+}
+
+
+/* iPad LandScape */
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+  .ipad-landscape { color: blue; }
 }
 
 @media (min-width: 768px) {
@@ -9,13 +66,21 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px ) {
+  html, body{
+    overflow-x: hidden !important;
+    
+  }
+  #search-input-sm:focus{
+        outline: none;
+  }
   .weather-details {
     background: #d3d3d6;
+   
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #fff #c1f0ed, #ffffff, );
+    background: -webkit-linear-gradient(to bottom, rgb(56, 168, 219) #c1f0ed, #e8eaee  );
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #ffffff #c1f0ed, #e8eaee, );
+    background: linear-gradient(to bottom, rgb(56, 168, 219) #c1f0ed, #e8eaee );
     /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+  */
 
   }
