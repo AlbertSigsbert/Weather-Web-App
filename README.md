@@ -1,4 +1,4 @@
-Weather Web App
+# Weather Web App
 
 This is a web application that provide city current weather stats
 
