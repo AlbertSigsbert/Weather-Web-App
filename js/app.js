@@ -92,7 +92,7 @@ searchLg.addEventListener("keyup", e => {
 
        clearValue(searchLg);
     }
-    e.preDefault();
+    e.preventDefault();
 });
 
 
