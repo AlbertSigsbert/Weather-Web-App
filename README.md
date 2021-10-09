@@ -40,7 +40,7 @@ This is a web application that provide city current weather stats
  
 
   
- Check it out here: :point_down::point_down::point_down:<br/>
+ Check it out:<br/> :point_down::point_down::point_down:<br/>
  [Dribbble](https://dribbble.com/shots/7767460-Weather-App-Website?utm_source=pinterest&utm_campaign=pinterest_shot&utm_content=Weather+App+Website&utm_medium=Social_Share)
 ## Author
 ### Contact Me: :point_down:<br/>
