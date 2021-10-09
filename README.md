@@ -11,13 +11,13 @@ This is a web application that provide city current weather stats
 ### Preview
 ![BookList Demo](img/github.gif)
 
-# Screenshots
-# Desktop View:<br/> :point_down::point_down::point_down:<br/>
+### Screenshots
+#### Desktop View:<br/> :point_down::point_down::point_down:<br/>
 
 <img src="img/weather-desktop.png">
 
             
-# Mobile View:<br/> :point_down::point_down::point_down:<br/>
+#### Mobile View:<br/> :point_down::point_down::point_down:<br/>
 <p align="center">
    <img src="img/weather-mobile.png" height="500px">
   </p>
