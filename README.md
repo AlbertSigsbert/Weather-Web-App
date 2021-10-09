@@ -15,12 +15,12 @@ This is a web application that provide city current weather stats
 
             This is a desktop View.
 
-<img src="img/github-finder-desktop.png">
+<img src="img/weather-desktop.png">
 
              This is for mobile view.
 
 <p align="center">
-   <img src="img/github-finder-mobile.png" height="500px">
+   <img src="img/weather-mobile.png" height="500px">
   </p>
   
 ### Links
