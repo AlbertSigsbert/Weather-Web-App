@@ -18,9 +18,9 @@ This is a web application that provide city current weather stats
 
             
 #### Mobile View:<br/> :point_down::point_down::point_down:<br/>
-<p align="center">
+
    <img src="img/weather-mobile.png" height="500px">
-  </p>
+
   
 ### Links
 
