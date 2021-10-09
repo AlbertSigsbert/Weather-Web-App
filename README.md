@@ -43,7 +43,7 @@ This is a web application that provide city current weather stats
  Check it out:<br/> :point_down::point_down::point_down:<br/>
  [Dribbble](https://dribbble.com/shots/7767460-Weather-App-Website?utm_source=pinterest&utm_campaign=pinterest_shot&utm_content=Weather+App+Website&utm_medium=Social_Share)
 ## Author
-### Contact Me: :point_down:<br/>
+### Contact Me:<br/> :point_down::point_down::point_down:<br/>
 - [Instagram](https://www.instagram.com/albert_sigsbert/)
 - [LinkedIn](https://www.linkedin.com/in/albertsigsbert/)
 - [Twitter](https://twitter.com/albert_sigsbert)
