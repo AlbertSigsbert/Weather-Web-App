@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 cities.forEach(city =>{
   city.addEventListener('click', (e) => {
-     
+    let locationName = '';
       locationName = e.target.innerText;
       localStorage.setItem('locationName', locationName);
 
@@ -72,7 +72,7 @@ cities.forEach(city =>{
 //   })
 // })
 searchLg.addEventListener("keyup", e => {
-    
+    let locationName = '';
     if (e.keyCode === 13) {
       localStorage.setItem('locationName', searchLg.value);
 
@@ -98,7 +98,7 @@ searchLg.addEventListener("keyup", e => {
 
 searchIcons.forEach(icon => {
     icon.addEventListener('click', e => {
-
+      let locationName = '';
        if(searchLg.value !== '')
        {
          localStorage.setItem('locationName', searchLg.value);
@@ -123,6 +123,7 @@ searchIcons.forEach(icon => {
        }
         else if(searchSm.value !== '')
         {
+          let locationName = '';
           localStorage.setItem('locationName', searchSm.value);
 
           locationName =  localStorage.getItem('locationName').toLowerCase();
