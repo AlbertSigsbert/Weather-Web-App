@@ -1,9 +1,11 @@
-class Weather
+import WEATHER_API_KEY from "./apikey.js";
+
+export default  class Weather
 {
     constructor()
     {
-        this.key = 'dcbe646844bb84fe04616abd72c824f3';
-        this.worldCitiesKey ='094f18524emsh2069b6781dfd8bap1b43a1jsn576ca3b694d0';
+        this.key = WEATHER_API_KEY;
+        
     }
 
     async getWeatherDetails(locationName)
@@ -25,4 +27,5 @@ class Weather
     }
 
 }
+
 

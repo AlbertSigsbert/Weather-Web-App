@@ -1,3 +1,4 @@
+import Weather from "./weather.js";
 const w = new Weather;
 const ui = new UI;
 
@@ -8,9 +9,11 @@ const searchLg = document.querySelector('#search-input-lg');
 const searchIcons = document.querySelectorAll('.search-icon');
 const cities = document.querySelectorAll('#city');
 
+
 document.addEventListener("DOMContentLoaded", function(event) {
+      let locationName = '';
       if(localStorage.getItem('locationName') === null){
-        
+         
       }
       else{
 
