@@ -46,4 +46,4 @@ This is a web application that provide city current weather stats
 - [Instagram](https://www.instagram.com/albert_sigsbert/)
 - [LinkedIn](https://www.linkedin.com/in/albertsigsbert/)
 - [Twitter](https://twitter.com/albert_sigsbert)
-- [Design]()
+
