@@ -25,7 +25,7 @@ This is a web application that provide city current weather stats
   
 ### Links
 
-- [Live Site URL](https://am-github-finder.netlify.app/)
+- [Live Site URL](https://am-weather-app.netlify.app/)
 - [Youtube] Coming soon
 
 ### Built with
