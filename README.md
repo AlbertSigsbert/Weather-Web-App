@@ -35,7 +35,11 @@ This is a web application that provide city current weather stats
 - Vanilla JS(Fetch API, Promises, Async & Await...)
 
 ## Design
-- Inspired by Arthur K's "Minimalist weather app design"
+ <img src="img/design.png">
+ 
+-Inspired by Arthur K's "Minimalist weather app design"
+  
+ Check it out here: :point_down::point_down::point_down:
 - [Dribbble](https://dribbble.com/shots/7767460-Weather-App-Website?utm_source=pinterest&utm_campaign=pinterest_shot&utm_content=Weather+App+Website&utm_medium=Social_Share)
 ## Author
 
