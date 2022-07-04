@@ -26,6 +26,6 @@ class UI
         humidity.innerText = weatherDetails.main.humidity + '%';
         windy.innerText = weatherDetails.wind.speed + 'm/s';
   
-        console.log(weatherDetails);
+        //console.log(weatherDetails);
     }
 }
